@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "breakingRecords", "breakingRecords\breakingRecords.csproj", "{985565CD-7AE7-4830-B313-F178AFAA87B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subarray Division", "..\Subarray Division\Subarray Division.csproj", "{11ABD7EA-DE08-46A0-9C9B-C6D0E45B9ED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{985565CD-7AE7-4830-B313-F178AFAA87B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{985565CD-7AE7-4830-B313-F178AFAA87B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{985565CD-7AE7-4830-B313-F178AFAA87B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ABD7EA-DE08-46A0-9C9B-C6D0E45B9ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ABD7EA-DE08-46A0-9C9B-C6D0E45B9ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ABD7EA-DE08-46A0-9C9B-C6D0E45B9ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ABD7EA-DE08-46A0-9C9B-C6D0E45B9ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
