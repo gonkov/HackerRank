@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Non-Divisional Subset", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Non-Divisional Subset Optimized", "..\Non-Divisional Subset Optimized\Non-Divisional Subset Optimized.csproj", "{60A149BC-6718-4F74-A6BA-64DD082DA0D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeated String", "..\Repeated String\Repeated String.csproj", "{14120CDB-48E1-46B2-B570-37DDCE88D95E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{60A149BC-6718-4F74-A6BA-64DD082DA0D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60A149BC-6718-4F74-A6BA-64DD082DA0D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60A149BC-6718-4F74-A6BA-64DD082DA0D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14120CDB-48E1-46B2-B570-37DDCE88D95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14120CDB-48E1-46B2-B570-37DDCE88D95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14120CDB-48E1-46B2-B570-37DDCE88D95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14120CDB-48E1-46B2-B570-37DDCE88D95E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
