@@ -65,6 +65,7 @@ class Result
         while (ifMoreOrEqual(sum,m))
         {
             List<int> m_temp = new List<int>(m);
+            m_temp.Add(0);
             while (ifMoreOrEqual(sum,m_temp))
             {
                 m_temp.Add(0);
@@ -78,7 +79,6 @@ class Result
         }
         return sum;
     }
-
     private static bool ifMoreOrEqual(List<int> sum, List<int> m)
     {
         if (sum.Count > m.Count)
@@ -102,7 +102,6 @@ class Result
         }
         return true;
     }
-
     public static List<int> Plus(List<int> a, List<int> b)
     {
         int perenos = 0;
