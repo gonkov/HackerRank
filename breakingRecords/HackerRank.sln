@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greedy Florist", "..\Greedy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock Maximize", "..\Stock Maximize\Stock Maximize.csproj", "{CEECCE9E-8EF9-4475-94E3-8E32EC901774}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam and Substring", "..\Sam and Substring\Sam and Substring.csproj", "{C3C36A18-1185-4E6C-990A-4F48415677D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CEECCE9E-8EF9-4475-94E3-8E32EC901774}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEECCE9E-8EF9-4475-94E3-8E32EC901774}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEECCE9E-8EF9-4475-94E3-8E32EC901774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C36A18-1185-4E6C-990A-4F48415677D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C36A18-1185-4E6C-990A-4F48415677D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C36A18-1185-4E6C-990A-4F48415677D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C36A18-1185-4E6C-990A-4F48415677D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
