@@ -21,10 +21,9 @@ class Result
             : base(message) { }
     }
 
-    /*
-      Time Limit on Big Data; 
-     */
-
+      /*
+  Time Limit on Big Data; 
+      */
     public static int substrings(string n)
     {
         // convert input string to the list
@@ -33,17 +32,27 @@ class Result
         {
             x.Add(Convert.ToInt32(n[i].ToString()));
         }
-        List<int> m = new List<int> (){1,0,0,0,0,0,0,0,0,7};
-        
+        List<int> m = new List<int>() { 1, 0, 0, 0, 0, 0, 0, 0, 0, 7 };
+
         List<int> sum = new List<int>(); // the resulting sum
 
         // main code
-        for (int i = 0; i < n.Length; i++)
+        List<long> mainList = new List<long>();
+        long sum_for_mainList = 0;
+        for (int i = 0; i < x.Count; i++)
         {
-            for (int j = 0; j < n.Length - i; j++)
-            {
-                sum = Plus(sum, x.GetRange(j, i + 1));
-            }
+            sum_for_mainList = sum_for_mainList + x[i]*(i+1);
+            mainList.Add(sum_for_mainList);
+        }
+        for (int i = x.Count-1; i > 0; i--)
+        {
+            sum.Insert(0, Convert.ToInt32(mainList[i]%10));
+            mainList[i - 1] = mainList[i - 1] + mainList[i] / 10;
+        }
+        while (mainList[0] > 0)
+        {
+            sum.Insert(0, Convert.ToInt32(mainList[0] % 10));
+            mainList[0] = mainList[0] / 10;
         }
 
         sum = Modulo2(sum, m); // bringing the result to the modulo 10^9 + 7;
@@ -56,17 +65,17 @@ class Result
         }
 
         return Convert.ToInt32(s);
-            
+
     }
 
     private static List<int> Modulo(List<int> sum, List<int> m)
     {
 
-        while (ifMoreOrEqual(sum,m))
+        while (ifMoreOrEqual(sum, m))
         {
             List<int> m_temp = new List<int>(m);
             m_temp.Add(0);
-            while (ifMoreOrEqual(sum,m_temp))
+            while (ifMoreOrEqual(sum, m_temp))
             {
                 m_temp.Add(0);
             }
@@ -81,20 +90,20 @@ class Result
     }
     private static List<int> Modulo2(List<int> sum, List<int> m)
     {
-            List<int> m_temp = new List<int>(m);
+        List<int> m_temp = new List<int>(m);
+        m_temp.Add(0);
+        while (ifMoreOrEqual(sum, m_temp))
+        {
             m_temp.Add(0);
+        }
+        while (ifMoreOrEqual(m_temp, m))
+        {
             while (ifMoreOrEqual(sum, m_temp))
             {
-                m_temp.Add(0);
+                sum = Minus(sum, m_temp);
             }
-            while (ifMoreOrEqual(m_temp, m))
-            {
-                while (ifMoreOrEqual(sum, m_temp))
-                {
-                    sum = Minus(sum, m_temp);
-                }
             m_temp.RemoveAt(m_temp.Count - 1);
-            }
+        }
         return sum;
     }
     private static bool ifMoreOrEqual(List<int> sum, List<int> m)
@@ -123,12 +132,12 @@ class Result
     public static List<int> Plus(List<int> a, List<int> b)
     {
         int perenos = 0;
-        
+
         if (a.Count > b.Count)
         {
             int i = a.Count - 1;
             int j = b.Count - 1;
-            while (j>=0)
+            while (j >= 0)
             {
                 a[i] = a[i] + b[j];
                 if (perenos == 1)
@@ -144,7 +153,7 @@ class Result
                 i--;
                 j--;
             }
-            while (i>=0)
+            while (i >= 0)
             {
                 if (perenos == 1)
                 {
