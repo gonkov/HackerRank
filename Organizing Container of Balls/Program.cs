@@ -29,24 +29,34 @@ class Result
             return "Possible";
 
         }*/
-        for (int i = 0; i < n; i++)
+        for (int z = 0; z < n; z++)
         {
-            int sum_i = 0 - container[i][0];
-            for (int j = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                sum_i = sum_i + container[i][j];
-            }
-            int sum_j = 0 - container[0][i];
-            for (int k = 0; k < n; k++)
-            {
-                sum_j = sum_j + container[0][k];
-            }
+                int sum_i = 0;
+                for (int j = 0; j < n; j++)
+                {
+                    sum_i = sum_i + container[i][j];
+                }
+                int sum_j = 0;
+                for (int k = 0; k < n; k++)
+                {
+                    sum_j = sum_j + container[k][z];
+                }
 
-            if (sum_i == sum_j)
-            {
-                //swap();
+                if (sum_i == sum_j)
+                {
+                    i = n; // exit from 'for (int i = 0; i < n; i++)'
+                    //swap();
+                }
+                if (i == n - 1)
+                {
+                    return "Impossible"; // was no 'exit' , so it is impossible
+                }
             }
         }
+        return "Possible";
+
 
     }
 
@@ -56,7 +66,7 @@ class Solution
 {
     public static void Main(string[] args)
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
         int q = Convert.ToInt32(Console.ReadLine().Trim());
 
@@ -72,11 +82,12 @@ class Solution
             }
 
             string result = Result.organizingContainers(container, n);
-
-            textWriter.WriteLine(result);
+            Console.WriteLine(result);
+            Console.ReadLine();
+            //textWriter.WriteLine(result);
         }
 
-        textWriter.Flush();
-        textWriter.Close();
+        //textWriter.Flush();
+        //textWriter.Close();
     }
 }
