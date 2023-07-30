@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam and Substring", "..\Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam and Substring v2", "..\Sam and Substring v2\Sam and Substring v2.csproj", "{E1D92EEB-BA77-46AD-A4A7-BF79EFD9033F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drawing Book", "..\Drawing Book\Drawing Book.csproj", "{C909D067-5E42-4E56-BBAE-E1FE0726EFD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{E1D92EEB-BA77-46AD-A4A7-BF79EFD9033F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1D92EEB-BA77-46AD-A4A7-BF79EFD9033F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1D92EEB-BA77-46AD-A4A7-BF79EFD9033F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C909D067-5E42-4E56-BBAE-E1FE0726EFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C909D067-5E42-4E56-BBAE-E1FE0726EFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C909D067-5E42-4E56-BBAE-E1FE0726EFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C909D067-5E42-4E56-BBAE-E1FE0726EFD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
